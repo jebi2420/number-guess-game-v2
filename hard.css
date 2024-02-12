@@ -1,0 +1,65 @@
+/* 제목 서체 */
+@font-face {
+    font-family: 'scary'; /* 서체의 이름을 지정합니다. */
+    src: url("/asset/font/scary.ttf"); /* 서체 파일의 경로를 지정합니다. */
+}
+/* 본문 서체 */
+@font-face {
+    font-family: 'bit'; /* 서체의 이름을 지정합니다. */
+    src: url("/asset/font/bit.ttf"); /* 서체 파일의 경로를 지정합니다. */
+}
+
+body {
+    background-color: black;
+    font-family: bit;
+    color: chartreuse;
+}
+
+.container{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-family: scary;
+    font-size: 4rem;
+}
+
+#user-input{
+    width: 20rem;
+    padding: 6px;
+    font-family: bit;
+    border: none;
+    border-radius: 2px;
+}
+
+#user-input:focus{
+    outline: none;
+}
+
+.btn{
+    padding: 6px 60px;
+    font-family: bit;
+    font-size: 0.8rem;
+    background-color: chartreuse;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+#result-area{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.btns{
+    padding: 10px 2px;
+    display: flex;
+    justify-content: space-between;
+}
+
+audio{
+    opacity: 0.3;
+}
