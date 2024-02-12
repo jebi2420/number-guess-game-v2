@@ -8,9 +8,14 @@
     <title>목숨을 건 숫자 맞추기 게임 :: 어려움</title>
   </head>
   <body>
-    <audio id="myAudio" controls>
-      <source src="/asset/music/bgm.mp3" type="audio/mp3" autoplay />
-    </audio>
+      <nav>
+          <audio id="myAudio" controls>
+            <source src="/asset/music/bgm.mp3" type="audio/mp3" autoplay />
+          </audio>
+          <a href="/easy.html" class="door">  <img src="/asset/images/door.png" alt="easy-door" />쉬움 모드로</a
+            ></a>
+      </nav>
+
     <div class="container">
       <h1>목숨을 건 숫자 맞추기 게임</h1>
       <div id="result-area">"목숨을 걸 준비는 되었는가?"</div>
@@ -19,7 +24,6 @@
           id="game-img"
           src="/asset/images/normal.webp"
           alt=""
-          style="width: 750px; height: 393px"
         />
         <div id="chance-area">남은 기회:</div>
       </div>
@@ -27,7 +31,7 @@
         <input
           type="number"
           id="user-input"
-          placeholder="1부터 10까지의 숫자를 입력하시오."
+          placeholder="1부터 100까지의 숫자를 입력하시오."
         />
         <div class="btns">
           <button id="play-btn" class="btn">제출</button>

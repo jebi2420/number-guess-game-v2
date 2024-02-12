@@ -15,6 +15,11 @@ body {
     color: chartreuse;
 }
 
+a{
+    color: black;
+    text-decoration: none;
+}
+
 .container{
     display: flex;
     flex-flow: column;
@@ -60,6 +65,87 @@ h1{
     justify-content: space-between;
 }
 
+nav{
+    margin: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 audio{
     opacity: 0.3;
 }
+
+.index-link{
+    color: chartreuse;
+}
+
+.door{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    color: chartreuse;
+}
+
+.door:hover{
+    transform: scale(1.01);
+}
+
+.door img{
+    width: 3rem;
+}
+
+@media screen and (max-width: 48rem){
+    h1{
+        font-size: 3.5rem;
+        text-align: center;
+    }
+
+    #game-img{
+        width: 100%; 
+        height: 224px;
+    }
+
+    #result-area{
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .game-display{
+        margin-bottom: 1rem;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    #user-input{
+        padding: 10px 6px;
+        font-family: bit;
+        border: none;
+        border-radius: 2px;
+    }
+
+    .btns{
+        flex-flow: column;
+        margin-top: 1rem;
+    }
+
+    .btn{
+        padding: 15px 60px;
+        margin-bottom: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    audio{
+        width: 4rem;
+    }
+
+    .door{
+        font-size: 0.6rem;
+    }
+
+    .door img{
+        width: 2rem;
+    }
+
+
