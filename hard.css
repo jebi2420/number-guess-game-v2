@@ -20,6 +20,35 @@ a{
     text-decoration: none;
 }
 
+nav{
+    margin: 2rem 15px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#audio-ctrl{
+    width: 2rem;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.door{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    color: chartreuse;
+}
+
+.door:hover, #audio-ctrl:hover{
+    transform: scale(1.05);
+}
+
+.door img{
+    width: 2rem;
+}
+
+
 .container{
     display: flex;
     flex-flow: column;
@@ -30,6 +59,11 @@ a{
 h1{
     font-family: scary;
     font-size: 4rem;
+}
+
+#game-img{
+    width: 750px; 
+    height: 393px
 }
 
 #user-input{
@@ -65,35 +99,6 @@ h1{
     justify-content: space-between;
 }
 
-nav{
-    margin: 10px 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-audio{
-    opacity: 0.3;
-}
-
-.index-link{
-    color: chartreuse;
-}
-
-.door{
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    color: chartreuse;
-}
-
-.door:hover{
-    transform: scale(1.01);
-}
-
-.door img{
-    width: 3rem;
-}
 
 @media screen and (max-width: 48rem){
     h1{
@@ -107,6 +112,7 @@ audio{
     }
 
     #result-area{
+        text-align: center;
         margin-bottom: 1rem;
         font-size: 1.5rem;
     }
@@ -148,4 +154,4 @@ audio{
         width: 2rem;
     }
 
-
+}

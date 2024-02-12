@@ -17,10 +17,23 @@ let gameOver = false;
 let chanceArea = document.getElementById("chance-area");
 let history = [];
 let gameImg = document.getElementById('game-img');
+let audio = document.getElementById('myAudio')
+let audioCtrl = document.getElementById('audio-ctrl')
 
+audioCtrl.addEventListener("click", bgmCtrl)
 playBtn.addEventListener("click", play)
 resetBtn.addEventListener("click", reset)
 userInput.addEventListener("focus", resetInput)
+
+function bgmCtrl(){
+    if(audio.paused){
+        audio.play();
+        audioCtrl.src = '/asset/images/audio.png';
+    }else{
+        audio.pause();
+        audioCtrl.src = '/asset/images/mute.png';
+    }
+}
 
 function pickRandomNum() {
     computerNum = Math.floor(Math.random() * 100)+1;
