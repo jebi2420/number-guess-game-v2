@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>목숨을 건 숫자 맞추기 게임 :: 어려움</title>
+  </head>
+  <body>
+    <audio id="myAudio" controls>
+      <source src="/asset/music/bgm.mp3" type="audio/mp3" autoplay />
+    </audio>
+    <div class="container">
+      <h1>목숨을 건 숫자 맞추기 게임</h1>
+      <div id="result-area">"목숨을 걸 준비는 되었는가?"</div>
+      <div class="game-display">
+        <img
+          id="game-img"
+          src="/asset/images/normal.webp"
+          alt=""
+          style="width: 750px; height: 393px"
+        />
+        <div id="chance-area">남은 기회:</div>
+      </div>
+      <div class="input-container">
+        <input
+          type="number"
+          id="user-input"
+          placeholder="1부터 10까지의 숫자를 입력하시오."
+        />
+        <div class="btns">
+          <button id="play-btn" class="btn">제출</button>
+          <button id="reset-btn" class="btn">환생하기</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
